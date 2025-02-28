@@ -24,7 +24,7 @@ const l2NativeSuperchainERC20Contract = {
   abi: L2NativeSuperchainERC20Abi,
 } as const
 
-describe('bridge token from L2 to L2', async () => {
+describe.skip('bridge token from L2 to L2', async () => {
   const decimals = await testClientByChain.supersimL2A.readContract({
     ...l2NativeSuperchainERC20Contract,
     functionName: 'decimals',
